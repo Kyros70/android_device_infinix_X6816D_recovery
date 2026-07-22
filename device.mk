@@ -31,13 +31,8 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service
 
 PRODUCT_PACKAGES += \
-    bootctrl.ums512
-
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.ums512 \
-    libgptutils \
-    libz \
-    libcutils
+    libgptutils
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
