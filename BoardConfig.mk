@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/infinix/Infinix-X6816D
+DEVICE_PATH := device/infinix/X6816D
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
