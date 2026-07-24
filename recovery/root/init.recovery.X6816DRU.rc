@@ -14,5 +14,4 @@ service load_modules /system/bin/load_modules.sh
 on boot
     start boot-hal-1-0
     start health-hal-2-1
-    insmod /lib/modules/thermal-generic-adc.ko
 
