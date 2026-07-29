@@ -1,17 +1,28 @@
-60#add for board init.rc for recovery mode
+#add for board init.rc for recovery mode
 import /init.recovery.common.rc
 
 on boot
     start boot-hal-1-0
     start health-hal-2-1
-	insmod /lib/modules/kfifo_buf.ko
-	insmod /lib/modules/gpio.ko
-	insmod /lib/modules/gpio-sprd.ko
-	insmod /lib/modules/sprd-drm.ko
-	insmod /lib/modules/tran_hwinfo.ko
-	insmod /lib/modules/sensorhub.ko
-	insmod /lib/modules/adaptive-ts.ko
-	insmod /lib/modules/ssd20xx_ts.ko
-	insmod /lib/modules/sc27xx-vibra.ko
-	insmod /lib/modules/thermal-generic-adc.ko
-	insmod /lib/modules/sc27xx_tsensor_thermal.ko
+    insmod /lib/modules/trusty.ko
+    insmod /lib/modules/trusty-log.ko
+    insmod /lib/modules/trusty-virtio.ko
+    insmod /lib/modules/trusty-irq.ko
+    insmod /lib/modules/trusty-pm.ko
+    insmod /lib/modules/trusty-ipc.ko
+    insmod /lib/modules/mmc_hsq.ko
+    insmod /lib/modules/mmc_swcq.ko
+    insmod /lib/modules/sdhci-sprd.ko
+    insmod /lib/modules/sprd_power_manager.ko
+    insmod /lib/modules/sipc-core.ko
+    insmod /lib/modules/sprd_systimer.ko
+    insmod /lib/modules/transsion_bias_voltage.ko
+    insmod /lib/modules/apsys-dvfs.ko
+    insmod /lib/modules/unisoc-iommu.ko
+    insmod /lib/modules/sprd-gsp.ko
+    insmod /lib/modules/sprd-drm.ko
+    insmod /lib/modules/tran_hwinfo.ko
+    insmod /lib/modules/tran_gesture.ko
+    insmod /lib/modules/kfifo_buf.ko
+    insmod /lib/modules/sensorhub.ko
+    insmod /lib/modules/adaptive-ts.ko
