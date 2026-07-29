@@ -1,17 +1,17 @@
-#add for board init.rc for recovery mode
+60#add for board init.rc for recovery mode
 import /init.recovery.common.rc
-
-on fs
-    start load_modules
-
-service load_modules /system/bin/load_modules.sh
-    oneshot
-    disabled
-    user root
-    group root
-    seclabel u:r:recovery:s0
 
 on boot
     start boot-hal-1-0
     start health-hal-2-1
-
+	insmod /lib/modules/kfifo_buf.ko
+	insmod /lib/modules/gpio.ko
+	insmod /lib/modules/gpio-sprd.ko
+	insmod /lib/modules/sprd-drm.ko
+	insmod /lib/modules/tran_hwinfo.ko
+	insmod /lib/modules/sensorhub.ko
+	insmod /lib/modules/adaptive-ts.ko
+	insmod /lib/modules/ssd20xx_ts.ko
+	insmod /lib/modules/sc27xx-vibra.ko
+	insmod /lib/modules/thermal-generic-adc.ko
+	insmod /lib/modules/sc27xx_tsensor_thermal.ko
