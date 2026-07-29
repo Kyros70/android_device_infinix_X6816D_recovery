@@ -14,6 +14,7 @@
 /usb-otg                 auto     /dev/block/sdd        /dev/block/sdd1        flags=display="usb-otg";storage;backup=1;removable
 
 # Other partitions
+/persist                 emmc     /dev/block/by-name/persist                   flags=display=persist;backup=0
 /spl                     emmc     /dev/block/mmcblk0boot0                      flags=display=spl;backup=1
 /spl_bk                  emmc     /dev/block/mmcblk0boot1                      flags=display=spl_bk;backup=1
 /uboot                   emmc     /dev/block/by-name/uboot                     flags=display="u-boot";slotselect;backup=1
