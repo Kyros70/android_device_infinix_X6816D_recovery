@@ -23,6 +23,7 @@
 /deltanv                 emmc     /dev/block/by-name/l_deltanv                 flags=display=deltanv;slotselect;backup=1
 /ltefixnv1               emmc     /dev/block/by-name/l_fixnv1                  flags=display=ltefixnv1;slotselect;backup=1
 /ltefixnv2               emmc     /dev/block/by-name/l_fixnv2                  flags=display=ltefixnv2;slotselect;backup=1
+/persist                 emmc     /dev/block/by-name/persist                   flags=display=persist;backup=0
 /cache                   f2fs     /dev/block/by-name/cache                     flags=display=cache;wipeingui;backup=0
 /pmsys                   emmc     /dev/block/by-name/pm_sys                    flags=display=pmsys;slotselect;backup=1
 /fbootlogo               emmc     /dev/block/by-name/fbootlogo                 flags=display="Fastboot logo";backup=1
