@@ -151,8 +151,6 @@ TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone1/temp"
 TW_DEFAULT_BRIGHTNESS := 4095
 TW_CUSTOM_BATTERY_PATH := /sys/devices/platform/charger-manager/power_supply/battery
 TW_USE_LEGACY_BATTERY_SERVICES := true
-TW_Y_OFFSET := 45
-TW_H_OFFSET := -45
 
 # INCLUDE TWRP CONFIG
 TW_INCLUDE_REPACKTOOLS := true
@@ -175,4 +173,4 @@ TARGET_USES_LOGD := true
 TWRP_EVENT_LOGGING := true
 
 # Version
-TW_DEVICE_VERSION := X6816D-Kyros70
+TW_DEVICE_VERSION := Kyros70
